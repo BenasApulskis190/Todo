@@ -1,0 +1,25 @@
+.Todo {
+  display: flex;
+  border-bottom: 1px solid #e0e0e0;
+  cursor: pointer;
+  justify-content: space-between;
+
+  &:hover button {
+    transform: translate(0, 0);
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 13px;
+
+    &.done {
+      text-decoration: line-through;
+    }
+  }
+
+  button {
+    transition: transform .2s;
+    transform: translate(100%, 0);
+  }
+}
